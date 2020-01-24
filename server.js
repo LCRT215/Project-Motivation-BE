@@ -19,7 +19,7 @@ server.use(cors());
 server.use(helmet());
 server.use(morgan("dev"));
 server.use(express.json());
-// server.use("/api/users", usersRouter);
+/// server.use("/api/users", usersRouter);
 
 server.get("/", (req, res) => {
   res.send(
@@ -28,7 +28,8 @@ server.get("/", (req, res) => {
       "Built by: Leslie Thompson" +
       "<br />" +
       "<br />" +
-      "GitHub: https://github.com/LCRT215/Project-Motivation-BE"
+      "GitHub: https://github.com/LCRT215/Project-Motivation-BE" +
+      "Deployed Backend: https://motivation-backend.herokuapp.com/"
   );
 });
 
