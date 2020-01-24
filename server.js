@@ -30,6 +30,7 @@ server.get("/", (req, res) => {
       "<br />" +
       "GitHub: https://github.com/LCRT215/Project-Motivation-BE" +
       "<br />" +
+      "<br />" +
       "Deployed Backend: https://motivation-backend.herokuapp.com/"
   );
 });
