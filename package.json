@@ -1,0 +1,33 @@
+{
+  "name": "Project-Motivation-BE",
+  "version": "1.0.0",
+  "description": "Built with Node.js,",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LCRT215/Project-Motivation-BE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LCRT215/Project-Motivation-BE/issues"
+  },
+  "homepage": "https://github.com/LCRT215/Project-Motivation-BE#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.8",
+    "morgan": "^1.9.1",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
