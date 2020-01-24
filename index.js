@@ -1,38 +1,14 @@
-const express = require("express");
 
-// Helmet is a collection of 14 smaller middleware functions that helps you secure your Express apps by setting various HTTP response headers.
-const helmet = require("helmet");
 
-// Morgan is a HTTP request logger middleware for node.js
-const morgan = require("morgan");
+//////////////////////////////////////
+require("dotenv").config(); // load .env variables
 
-// CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options
-const cors = require("cors");
+const server = require("./server.js");
 
-// const usersRouter = require('./dummyusers/users-router.js');
+// Needed to deploy to Heroku
+const port = process.env.PORT || 4200;
 
-const server = express();
-
-server.use(express.json());
-server.use(helmet());
-server.use(morgan("dev"));
-server.use(cors());
-// server.use("/api/users", usersRouter);
-
-server.get("/", (req, res) => {
-  res.send(
-    "<h1> Welcome to Project Motivation Backend!</h1>" +
-      "<br/>" +
-      "Built by: Leslie Thompson" +
-      "<br />" +
-      "<br />" +
-      "GitHub: https://github.com/LCRT215/Project-Motivation-BE"
-  );
-});
-
-const port = 4200;
-
-server.listen(port, function() {
+server.listen(port, () => {
   console.log(
     `\n *** ✨ Ya server is running on localhost:${port} sis ✨ *** \n`
   );
