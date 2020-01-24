@@ -28,7 +28,8 @@ server.get("/", (req, res) => {
       "Built by: Leslie Thompson" +
       "<br />" +
       "<br />" +
-      "GitHub: https://github.com/LCRT215/Project-Motivation-BE"
+      "GitHub: https://github.com/LCRT215/Project-Motivation-BE" +
+      "Deployed Backend: https://motivation-backend.herokuapp.com/"
   );
 });
 
