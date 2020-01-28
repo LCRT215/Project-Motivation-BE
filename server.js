@@ -16,3 +16,4 @@ server.use(express.json());
 adminRoute(server);
 
 module.exports = server;
+
