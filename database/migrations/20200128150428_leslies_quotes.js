@@ -3,6 +3,7 @@ exports.up = function(knex, Promise) {
     tbl.increments();
     tbl.text("quote").notNullable();
     tbl.string("author", 128).notNullable();
+    table.timestamp("created_at").defaultTo(knex.fn.now());
   });
 };
 
