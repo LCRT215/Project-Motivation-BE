@@ -26,10 +26,6 @@ function get(req, res) {
 function post(req, res) {
   DB.add(req.body)
     .then(quote => {
-      // res.status(201).json({
-      //   "Quote was successfully posted": req.body,
-      //   "Added quote ID": quote
-      // });
       if (quote) {
         res.status(200).json({
           "Your quote was successfully added": req.body,
@@ -46,3 +42,14 @@ function post(req, res) {
       res.status(500).json({ message: "Failed to add new quote" });
     });
 }
+
+// if (!title || !date || !location) {
+//   res.status(400).json({
+//     message: "Sorry, all new experiences require a title, date, and location."
+//   });
+// }
+// else {
+//   Experiences.addExperience(req.body)
+//     .then(experience => {
+//       res.status(201).json(experience);
+//     })
