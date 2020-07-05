@@ -14,7 +14,7 @@ function get(req, res) {
       } else {
         res.status(404).json({
           message:
-            "There are currently no quotes in the database. Please add one!"
+            "There are currently no quotes in the database. Please add a new one!"
         });
       }
     })
